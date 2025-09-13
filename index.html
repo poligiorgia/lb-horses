@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>L.B. Horses — Showjumpers for Sale Worldwide</title>
+  <meta name="description" content="L.B. Horses sources and sells elite showjumpers worldwide. Based in San Cesario sul Panaro (Modena), Italy. Global shipping." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --gold: #d4af37; }
+    html { scroll-behavior: smooth; }
+    body { background: #0a0a0a; color:#f5f5f4; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    .serif { font-family: "Playfair Display", Georgia, "Times New Roman", serif; }
+    .gold { color: var(--gold); }
+    .bg-gold { background: var(--gold); }
+    .ring-gold { --tw-ring-color: var(--gold); }
+    .gradient { background: radial-gradient(1000px 600px at 70% -20%, rgba(212,175,55,.15), rgba(0,0,0,0)), linear-gradient(180deg, rgba(212,175,55,.07), rgba(0,0,0,0)); }
+    .card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); backdrop-filter: blur(6px); }
+    .sold-ribbon { position:absolute; top:12px; left:-40px; transform: rotate(-45deg); background: #e11d48; color:white; padding:6px 48px; font-weight:700; letter-spacing:.05em; font-size:.75rem; box-shadow:0 8px 24px rgba(0,0,0,.5); }
+    .shadow-soft { box-shadow: 0 10px 30px rgba(0,0,0,.45); }
+    /* Image placeholders maintain aspect ratio */
+    .media { aspect-ratio: 16/10; object-fit: cover; }
+  </style>
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur">
+    <div class="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-3 group">
+        <div class="w-9 h-9 rounded-full bg-gold/90 grid place-items-center text-black font-black">LB</div>
+        <div class="leading-tight">
+          <div class="serif text-xl font-semibold tracking-wide">L.B. Horses</div>
+          <div class="text-xs text-white/60"> Showjumpers</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm">
+        <a href="#horses" class="hover:text-white/90 text-white/70">Horses</a>
+        <a href="#references" class="hover:text-white/90 text-white/70">Top References</a>
+        <a href="#about" class="hover:text-white/90 text-white/70">About</a>
+        <a href="#contact" class="hover:text-white/90 text-white/70">Contact</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/393664481244" class="hidden sm:inline-flex bg-gold text-black font-semibold px-4 py-2 rounded-full hover:opacity-90 shadow-soft" aria-label="WhatsApp">WhatsApp</a>
+        <a href="#contact" class="inline-flex border border-white/20 px-4 py-2 rounded-full hover:border-white/40">Enquire</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative overflow-hidden gradient">
+    <div class="mx-auto max-w-7xl px-4 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="serif text-4xl md:text-6xl font-bold leading-tight"><span class="gold">L.B. Horses</span> — Elite Showjumpers for Sale Worldwide</h1>
+        <p class="mt-6 text-lg text-white/80">Based in San Cesario sul Panaro (Modena), Italy. We source, produce, and sell top-quality showjumpers with <span class="gold font-semibold">global shipping</span> and discreet service.</p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#horses" class="bg-gold text-black font-semibold px-6 py-3 rounded-full hover:opacity-90 shadow-soft">Explore Horses</a>
+          <a href="#references" class="border border-white/20 px-6 py-3 rounded-full hover:border-white/40">Top References</a>
+        </div>
+      </div>
+      <div class="relative">
+        <!-- Hero image placeholder; replace src with your hero photo at /img/hero.jpg -->
+        <img src="img/hero/1.jpg" alt="Showjumper in action" class="media w-full rounded-2xl object-cover shadow-soft" />
+        <div class="absolute -bottom-4 -right-4 bg-black/70 border border-white/10 rounded-xl p-4">
+          <div class="text-xs uppercase tracking-widest text-white/60">Headquarters</div>
+          <div class="font-medium">San Cesario sul Panaro · Modena · Italy</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Horses for Sale -->
+  <section id="horses" class="mx-auto max-w-7xl px-4 py-16">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+      <div>
+        <h2 class="serif text-3xl md:text-4xl font-bold">Available Horses</h2>
+        <p class="mt-2 text-white/70">All details are verified. Vetting and trial by appointment. Shipping worldwide.</p>
+      </div>
+      <!-- Filters -->
+      <div class="flex flex-wrap items-center gap-3">
+        <input id="search" type="search" placeholder="Search name / bloodline" class="bg-black/40 border border-white/15 px-4 py-2 rounded-lg focus:outline-none focus:ring ring-gold" />
+        <select id="statusFilter" class="bg-black/40 border border-white/15 px-3 py-2 rounded-lg focus:outline-none focus:ring ring-gold">
+          <option value="all">All statuses</option>
+          <option value="for-sale">For Sale</option>
+          <option value="sold">Sold</option>
+        </select>
+        <select id="ageFilter" class="bg-black/40 border border-white/15 px-3 py-2 rounded-lg focus:outline-none focus:ring ring-gold">
+          <option value="all">All ages</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Horses Grid -->
+    <div id="horseGrid" class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Template for each horse card -->
+      <!-- Use /img/<slug>/<n>.jpg for photos. Create folders accordingly. -->
+
+      <!-- 6 anni extra van veldorheve ( O'Neill van bischop x Animo) (mare) -->
+      <article class="card rounded-2xl overflow-hidden relative" data-status="for-sale" data-age="6" data-name="Extra van Veldorheve" data-bloodline="O'Neill van Bischop Animo">
+        <img src="img/extra-van-veldorheve/1.jpg" alt="Extra van Veldorheve" class="media w-full" />
+        <div class="p-5">
+          <h3 class="serif text-2xl font-semibold">Extra van Veldorheve</h3>
+          <p class="text-white/70 mt-1">Mare · 6 years · by <span class="gold">O'Neill van Bischop × Animo</span></p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="text-xs tracking-wider px-2.5 py-1 rounded-full bg-white/10">For Sale</span>
+            <a href="#contact" class="text-sm gold hover:underline">Enquire</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 9 anni Austin WP Z (Akarad Hero x Stalypso) (gelding) -->
+      <article class="card rounded-2xl overflow-hidden relative" data-status="for-sale" data-age="9" data-name="Austin WP Z" data-bloodline="Akarad Hero Stalypso">
+        <img src="img/austin-wp-z/1.jpg" alt="Austin WP Z" class="media w-full" />
+        <div class="p-5">
+          <h3 class="serif text-2xl font-semibold">Austin WP Z</h3>
+          <p class="text-white/70 mt-1">Gelding · 9 years · by <span class="gold">Akarad Hero × Stalypso</span></p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="text-xs tracking-wider px-2.5 py-1 rounded-full bg-white/10">For Sale</span>
+            <a href="#contact" class="text-sm gold hover:underline">Enquire</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6 anni Goodnight Ballivor (Cookstown Royal Cavalier) (gelding) -->
+      <article class="card rounded-2xl overflow-hidden relative" data-status="for-sale" data-age="6" data-name="Goodnight Ballivor" data-bloodline="Cookstown Royal Cavalier">
+        <img src="img/goodnight-ballivor/1.jpg" alt="Goodnight Ballivor" class="media w-full" />
+        <div class="p-5">
+          <h3 class="serif text-2xl font-semibold">Goodnight Ballivor</h3>
+          <p class="text-white/70 mt-1">Gelding · 6 years · by <span class="gold">Cookstown Royal Cavalier</span></p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="text-xs tracking-wider px-2.5 py-1 rounded-full bg-white/10">For Sale</span>
+            <a href="#contact" class="text-sm gold hover:underline">Enquire</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 7 anni Jm maximus ( Cornet Obolenski x Obos quality) (gelding) -->
+      <article class="card rounded-2xl overflow-hidden relative" data-status="for-sale" data-age="7" data-name="JM Maximus" data-bloodline="Cornet Obolenski Obos Quality">
+        <img src="img/jm-maximus/1.jpg" alt="JM Maximus" class="media w-full" />
+        <div class="p-5">
+          <h3 class="serif text-2xl font-semibold">JM Maximus</h3>
+          <p class="text-white/70 mt-1">Gelding · 7 years · by <span class="gold">Cornet Obolenski × Obos Quality</span></p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="text-xs tracking-wider px-2.5 py-1 rounded-full bg-white/10">For Sale</span>
+            <a href="#contact" class="text-sm gold hover:underline">Enquire</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6 anni Tomorrowland van het eelshof ( Falaise de muze x Cicero Z ) (gelding) -->
+      <article class="card rounded-2xl overflow-hidden relative" data-status="for-sale" data-age="6" data-name="Tomorrowland van het Eelshof" data-bloodline="Falaise de Muze Cicero Z">
+        <img src="img/tomorrowland-van-het-eelshof/1.jpg" alt="Tomorrowland van het Eelshof" class="media w-full" />
+        <div class="p-5">
+          <h3 class="serif text-2xl font-semibold">Tomorrowland van het Eelshof</h3>
+          <p class="text-white/70 mt-1">Gelding · 6 years · by <span class="gold">Falaise de Muze × Cicero Z</span></p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="text-xs tracking-wider px-2.5 py-1 rounded-full bg-white/10">For Sale</span>
+            <a href="#contact" class="text-sm gold hover:underline">Enquire</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3 anni Gucci de 4 vents ( Greco sitte x I am moerhoeve star) -->
+      <article class="card rounded-2xl overflow-hidden relative" data-status="for-sale" data-age="3" data-name="Gucci de 4 Vents" data-bloodline="Greco Sitte I Am Moerhoeve Star">
+        <img src="img/gucci-de-4-vents/1.jpg" alt="Gucci de 4 Vents" class="media w-full" />
+        <div class="p-5">
+          <h3 class="serif text-2xl font-semibold">Gucci de 4 Vents</h3>
+          <p class="text-white/70 mt-1">Stallion · 3 years · by <span class="gold">Greco Sitte × I Am Moerhoeve Star</span></p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="text-xs tracking-wider px-2.5 py-1 rounded-full bg-white/10">For Sale</span>
+            <a href="#contact" class="text-sm gold hover:underline">Enquire</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 8 anni Chief Z ( Cicero Z x Harley vdl) SOLD -->
+      <article class="card rounded-2xl overflow-hidden relative" data-status="sold" data-age="8" data-name="Chief Z" data-bloodline="Cicero Z Harley VDL">
+        <div class="sold-ribbon">SOLD</div>
+        <img src="img/chief-z/1.jpg" alt="Chief Z" class="media w-full" />
+        <div class="p-5">
+          <h3 class="serif text-2xl font-semibold">Chief Z</h3>
+          <p class="text-white/70 mt-1">Gelding · 8 years · by <span class="gold">Cicero Z × Harley VDL</span></p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="text-xs tracking-wider px-2.5 py-1 rounded-full bg-white/10">Sold</span>
+            <a href="#contact" class="text-sm gold hover:underline">Request Similar</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 9 anni Chariando PS ( Chacoon Blue x Carinue) -->
+      <article class="card rounded-2xl overflow-hidden relative" data-status="for-sale" data-age="9" data-name="Chariando PS" data-bloodline="Chacoon Blue Carinue">
+        <img src="img/chariando-ps/1.jpg" alt="Chariando PS" class="media w-full" />
+        <div class="p-5">
+          <h3 class="serif text-2xl font-semibold">Chariando PS</h3>
+          <p class="text-white/70 mt-1">Gelding · 9 years · by <span class="gold">Chacoon Blue × Carinue</span></p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="text-xs tracking-wider px-2.5 py-1 rounded-full bg-white/10">For Sale</span>
+            <a href="#contact" class="text-sm gold hover:underline">Enquire</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2yo Morosito -->
+      <article class="card rounded-2xl overflow-hidden relative" data-status="for-sale" data-age="2" data-name="Mosito van het Hellenhof x Clinton" data-bloodline="Mosito van het Hellenhof Clinton">
+        <img src="img/morosito/1.jpg" alt="Morosito" class="media w-full" />
+        <div class="p-5">
+          <h3 class="serif text-2xl font-semibold">Stallion · 2yo </h3>
+          <p class="text-white/70 mt-1">Colt/Filly · 2 years · by<span class="gold">Mosito van het Hellenhof × Clinton</span></p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="text-xs tracking-wider px-2.5 py-1 rounded-full bg-white/10">For Sale</span>
+            <a href="#contact" class="text-sm gold hover:underline">Enquire</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- MyTeresa / 9yo Mare by Mylord Carthago x Argentinus - also 8yo Italian bred? Provided list had mixed info; we present the 9yo mare. -->
+      <article class="card rounded-2xl overflow-hidden relative" data-status="for-sale" data-age="9" data-name="MyTeresa" data-bloodline="Mylord Carthago Argentinus">
+        <img src="img/myteresa/1.jpg" alt="MyTeresa" class="media w-full" />
+        <div class="p-5">
+          <h3 class="serif text-2xl font-semibold">MyTeresa</h3>
+          <p class="text-white/70 mt-1">Mare · 9 years · by <span class="gold">Mylord Carthago × Argentinus</span> · Italian bred</p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="text-xs tracking-wider px-2.5 py-1 rounded-full bg-white/10">For Sale</span>
+            <a href="#contact" class="text-sm gold hover:underline">Enquire</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Nihal della Boeme, mare by Canto x Indoctro -->
+      <article class="card rounded-2xl overflow-hidden relative" data-status="for-sale" data-age="8" data-name="Nihal della Boeme" data-bloodline="Canto Indoctro">
+        <img src="img/nihal-della-boeme/1.jpg" alt="Nihal della Boeme" class="media w-full" />
+        <div class="p-5">
+          <h3 class="serif text-2xl font-semibold">Nihal della Boeme</h3>
+          <p class="text-white/70 mt-1">Mare · by <span class="gold">Canto × Indoctro</span> · Italian bred</p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="text-xs tracking-wider px-2.5 py-1 rounded-full bg-white/10">For Sale</span>
+            <a href="#contact" class="text-sm gold hover:underline">Enquire</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Coronata - 5 yo mare (Topinambur x Nadir di San Patrignano) -->
+      <article class="card rounded-2xl overflow-hidden relative" data-status="for-sale" data-age="5" data-name="Coronata" data-bloodline="Topinambur Nadir di San Patrignano">
+        <img src="img/coronata/1.jpg" alt="Coronata" class="media w-full" />
+        <div class="p-5">
+          <h3 class="serif text-2xl font-semibold">Coronata</h3>
+          <p class="text-white/70 mt-1">Mare · 5 years · by <span class="gold">Topinambur × Nadir di San Patrignano</span></p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="text-xs tracking-wider px-2.5 py-1 rounded-full bg-white/10">For Sale</span>
+            <a href="#contact" class="text-sm gold hover:underline">Enquire</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Reve, gelding by Sunday de Riverland x Vicompte de la Lodge, 5 yo -->
+      <article class="card rounded-2xl overflow-hidden relative" data-status="for-sale" data-age="5" data-name="Reve" data-bloodline="Sunday de Riverland Vicompte de la Lodge">
+        <img src="img/reve/1.jpg" alt="Reve" class="media w-full" />
+        <div class="p-5">
+          <h3 class="serif text-2xl font-semibold">Reve</h3>
+          <p class="text-white/70 mt-1">Gelding · 5 years · by <span class="gold">Sunday de Riverland × Vicompte de la Lodge</span> · Italian bred</p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="text-xs tracking-wider px-2.5 py-1 rounded-full bg-white/10">For Sale</span>
+            <a href="#contact" class="text-sm gold hover:underline">Enquire</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="mt-8 text-sm text-white/50">Looking for something specific? <a href="#contact" class="gold underline">Tell us your brief</a> — we can source off-market horses as well.</p>
+  </section> 
+
+  <!-- Top References -->
+  <section id="references" class="mx-auto max-w-7xl px-4 py-16">
+    <div class="flex items-end justify-between gap-6">
+      <div>
+        <h2 class="serif text-3xl md:text-4xl font-bold">Top References</h2>
+        <p class="mt-2 text-white/70">A selection of notable horses placed by L.B. Horses.</p>
+      </div>
+    </div>
+
+    <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+      <!-- Maurice -->
+      <article class="card rounded-2xl overflow-hidden">
+        <img src="img/references/maurice/1.jpg" alt="Maurice" class="media w-full" />
+        <div class="p-5">
+          <h3 class="serif text-2xl font-semibold">Maurice</h3>
+          <ul class="mt-2 text-white/80 space-y-1">
+            <li> Olympic reference · Gelding by <span class="gold">Thunder</span></li>
+            <li> With Cian O’Connor</li>
+          </ul>
+        </div>
+      </article>
+
+
+      <!-- Granit -->
+      <article class="card rounded-2xl overflow-hidden">
+        <img src="img/references/granit/1.jpg" alt="Granit" class="media w-full" />
+        <div class="p-5">
+          <h3 class="serif text-2xl font-semibold">Granit</h3>
+          <ul class="mt-2 text-white/80 space-y-1">
+            <li> Gelding by <span class="gold">Grey Top</span></li>
+            <li> Out of Rasmine Laudrup-Dufour · Denmark</li>
+            <li>Elite pedigree · Proven performance</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Extasy Courtil -->
+      <article class="card rounded-2xl overflow-hidden">
+        <img src="img/references/extasy-courtil/1.jpg" alt="Extasy Courtil" class="media w-full" />
+        <div class="p-5">
+          <h3 class="serif text-2xl font-semibold">Extasy Courtil</h3>
+          <ul class="mt-2 text-white/80 space-y-1">
+            <li> Gelding by <span class="gold">Tzigano Massereuse</span></li>
+            <li> Competed at the European Championship for Children · Riesenbeck (DE)</li>
+            <li>Top reference · Turkey 🇹🇷</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Moody -->
+      <article class="card rounded-2xl overflow-hidden">
+        <img src="img/references/moody/1.jpg" alt="Moody" class="media w-full" />
+        <div class="p-5">
+          <h3 class="serif text-2xl font-semibold">Moody</h3>
+          <ul class="mt-2 text-white/80 space-y-1">
+            <li> Gelding by <span class="gold">Uganositte</span></li>
+            <li> Competing 1.50m / 1.55m classes</li>
+          </ul>
+          
+          <!-- Suggested video overlay text -->
+          <details class="mt-3 text-sm text-white/70">
+            <summary class="cursor-pointer">Suggested video overlay text</summary>
+            <ul class="list-disc ml-5 mt-2">
+              <li>Moody – Top Reference</li>
+              <li>Gelding by Uganositte</li>
+              <li>Competing 1.50m / 1.55m</li>
+            </ul>
+          </details>
+        </div>
+      </article>
+
+      <!-- Knass B -->
+      <article class="card rounded-2xl overflow-hidden">
+        <img src="img/references/knass-b/1.jpg" alt="Knass B" class="media w-full" />
+        <div class="p-5">
+          <h3 class="serif text-2xl font-semibold">Knass B</h3>
+          <ul class="mt-2 text-white/80 space-y-1">
+            <li> Gelding by <span class="gold">Toulon</span></li>
+            <li>🇺🇸 Competing 1.50m with Elisa Broz & Cassio Rivetti</li>
+            <li>Scope, quality & consistency</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="mx-auto max-w-7xl px-4 py-16">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="serif text-3xl md:text-4xl font-bold">Italian roots, global reach</h2>
+        <p class="mt-4 text-white/80">L.B. Horses is a boutique for elite showjumpers. From prospects to Grand Prix performers, we curate bloodlines, temperament, and athleticism. Our network and reputation allow us to place horses with top riders and ambitious amateurs across the world.</p>
+        <ul class="mt-6 grid sm:grid-cols-2 gap-3 text-white/80">
+          <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-gold"></span> Bespoke sourcing & tryouts</li>
+          <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-gold"></span> International shipping & paperwork</li>
+          <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-gold"></span> Transparent vetting</li>
+          <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-gold"></span> After‑sale support</li>
+        </ul>
+      </div>
+      <div>
+        <img src="img/about.png" alt="LB Horses facility" class="media w-full rounded-2xl object-cover shadow-soft" />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Owner References -->
+<section id="owner" class="mx-auto max-w-7xl px-4 py-16">
+  <div class="card rounded-2xl p-8">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <!-- Foto (opzionale) -->
+      <div class="order-2 md:order-1">
+        <img src="img/lorenzo/lorenzo.jpeg" alt="Lorenzo Barbadoro" class="media w-full rounded-2xl object-cover shadow-soft" />
+      </div>
+
+      <!-- Testo -->
+      <div class="order-1 md:order-2">
+        <h2 class="serif text-3xl md:text-4xl font-bold">Owner References — Lorenzo Barbadoro</h2>
+        <p class="mt-4 text-white/80">
+          Founder of <span class="gold font-semibold">L.B. Horses</span>, Lorenzo Barbadoro has a proven record in top sport, with results and experience that back our horse selection and training philosophy.
+        </p>
+
+        <div class="mt-6 flex flex-wrap gap-3">
+          <span class="text-xs tracking-wider px-3 py-1 rounded-full bg-white/10">2× European Championships</span>
+          <span class="text-xs tracking-wider px-3 py-1 rounded-full bg-white/10">9× Nations Cup</span>
+          <span class="text-xs tracking-wider px-3 py-1 rounded-full bg-white/10">2× Italian Championship Gold</span>
+          <span class="text-xs tracking-wider px-3 py-1 rounded-full bg-white/10">1× Italian Championship Silver</span>
+        </div>
+
+        <ul class="mt-6 space-y-3 text-white/85">
+          <li>• <span class="gold font-medium">European Championships</span>: Wiener Neustadt 2015; Oliva Nova 2022</li>
+          <li>• <span class="gold font-medium">Nations Cup</span>: 9 participations</li>
+          <li>• <span class="gold font-medium">Italian Championships — Gold</span>: 2014 (San Giovanni in Marignano); 2022 (Arezzo)</li>
+          <li>• <span class="gold font-medium">Italian Championships — Silver</span>: 2015</li>
+        </ul>
+
+        <p class="mt-6 text-white/70 text-sm">
+          These highlights reflect Lorenzo’s long-standing involvement at the highest levels, informing the way we source, produce and present horses for ambitious riders worldwide.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact -->
+  <section id="contact" class="mx-auto max-w-7xl px-4 py-16">
+    <div class="card rounded-2xl p-8">
+      <div class="grid md:grid-cols-2 gap-10">
+        <div>
+          <h2 class="serif text-3xl md:text-4xl font-bold">Get in touch</h2>
+          <p class="mt-3 text-white/80">Tell us what you’re looking for — height, age, record, and budget — and we’ll propose suitable horses. We sell worldwide.</p>
+          <div class="mt-6 space-y-2 text-white/80">
+            <div><span class="text-white/60">Company:</span> <span class="gold font-medium">L.B. Horses</span></div>
+            <div><span class="text-white/60">Phone/WhatsApp:</span> <a class="gold hover:underline" href="https://wa.me/393664481244">+39 366 448 1244</a></div>
+            <div><span class="text-white/60">Email:</span> <a class="gold hover:underline" href="mailto:barbadoro.lorenzo01@gmail.com">barbadoro.lorenzo01@gmail.com</a></div>
+            <div><span class="text-white/60">VAT (P.IVA):</span> 03984250369</div>
+            <div><span class="text-white/60">Location:</span> San Cesario sul Panaro (Modena), Italy</div>
+          </div>
+        </div>
+        <form action="mailto:barbadoro.lorenzo01@gmail.com" method="post" enctype="text/plain" class="space-y-4">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <input required name="name" placeholder="Your name" class="w-full bg-black/40 border border-white/15 px-4 py-3 rounded-lg focus:outline-none focus:ring ring-gold" />
+            <input required type="email" name="email" placeholder="Email" class="w-full bg-black/40 border border-white/15 px-4 py-3 rounded-lg focus:outline-none focus:ring ring-gold" />
+          </div>
+          <input name="phone" placeholder="Phone / WhatsApp" class="w-full bg-black/40 border border-white/15 px-4 py-3 rounded-lg focus:outline-none focus:ring ring-gold" />
+          <textarea required name="message" rows="5" placeholder="Tell us about the horse you need (age, height, level, budget)." class="w-full bg-black/40 border border-white/15 px-4 py-3 rounded-lg focus:outline-none focus:ring ring-gold"></textarea>
+          <div class="flex items-center gap-3">
+            <button type="submit" class="bg-gold text-black font-semibold px-6 py-3 rounded-full hover:opacity-90">Send enquiry</button>
+            <a class="inline-flex items-center gap-2 border border-white/20 px-4 py-3 rounded-full hover:border-white/40" href="https://wa.me/393664481244">Chat on WhatsApp</a>
+          </div>
+          <p class="text-xs text-white/50">By submitting, you agree to be contacted by L.B. Horses regarding your enquiry.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 py-10 grid md:grid-cols-3 gap-8 text-sm text-white/70">
+      <div>
+        <div class="serif text-xl font-semibold gold">L.B. Horses</div>
+        <p class="mt-2"> Showjumpers for sale worldwide.</p>
+      </div>
+      <div>
+        <div class="text-white/60">Address</div>
+        <p>San Cesario sul Panaro (MO), Italy</p>
+        <div class="text-white/60 mt-3">VAT (P.IVA)</div>
+        <p>03984250369</p>
+      </div>
+      <div>
+        <div class="text-white/60">Contact</div>
+        <p><a class="gold hover:underline" href="tel:+393664481244">+39 366 448 1244</a> · <a class="gold hover:underline" href="mailto:barbadoro.lorenzo01@gmail.com">barbadoro.lorenzo01@gmail.com</a></p>
+        <p class="mt-3">© <span id="year"></span> L.B. Horses. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple client-side filtering
+    const search = document.getElementById('search');
+    const statusFilter = document.getElementById('statusFilter');
+    const ageFilter = document.getElementById('ageFilter');
+    const cards = Array.from(document.querySelectorAll('#horseGrid article'));
+
+    function applyFilters() {
+      const q = (search.value || '').toLowerCase().trim();
+      const status = statusFilter.value;
+      const age = ageFilter.value;
+
+      cards.forEach(card => {
+        const name = card.dataset.name.toLowerCase();
+        const blood = card.dataset.bloodline.toLowerCase();
+        const cardStatus = card.dataset.status;
+        const cardAge = card.dataset.age;
+
+        const matchesText = !q || name.includes(q) || blood.includes(q);
+        const matchesStatus = status === 'all' || cardStatus === status;
+        const matchesAge = age === 'all' || cardAge === age;
+
+        card.style.display = (matchesText && matchesStatus && matchesAge) ? '' : 'none';
+      });
+    }
+
+    [search, statusFilter, ageFilter].forEach(el => el.addEventListener('input', applyFilters));
+  </script>
+
+  <!--
+    IMAGE FOLDERS — put your photos here (relative to site root):
+      /img/hero.jpg
+      /img/about.jpg
+      /img/extra-van-veldorheve/1.jpg
+      /img/austin-wp-z/1.jpg
+      /img/goodnight-ballivor/1.jpg
+      /img/jm-maximus/1.jpg
+      /img/tomorrowland-van-het-eelshof/1.jpg
+      /img/gucci-de-4-vents/1.jpg
+      /img/chief-z/1.jpg
+      /img/chariando-ps/1.jpg
+      /img/mosito-x-clinton/1.jpg
+      /img/myteresa/1.jpg
+      /img/nihal-della-boeme/1.jpg
+      /img/coronata/1.jpg
+      /img/reve/1.jpg
+
+      References:
+      /img/references/granit/1.jpg
+      /img/references/extasy-courtil/1.jpg
+      /img/references/moody/1.jpg
+      /img/references/maurice/1.jpg
+      /img/references/knass-b/1.jpg
+  -->
+</body>
+</html>
