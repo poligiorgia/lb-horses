@@ -599,33 +599,23 @@
     [search, statusFilter, ageFilter].forEach(el => el.addEventListener('input', applyFilters));
   </script>
 
-  <!--
-    IMAGE FOLDERS — put your photos here (relative to site root):
-      /img/hero.jpg
-      /img/about.jpg
-      /img/extra-van-veldorheve/1.jpg
-      /img/austin-wp-z/1.jpg
-      /img/goodnight-ballivor/1.jpg
-      /img/jm-maximus/1.jpg
-      /img/tomorrowland-van-het-eelshof/1.jpg
-      /img/gucci-de-4-vents/1.jpg
-      /img/chief-z/1.jpg
-      /img/chariando-ps/1.jpg
-      /img/mosito-x-clinton/1.jpg
-      /img/myteresa/1.jpg
-      /img/nihal-della-boeme/1.jpg
-      /img/coronata/1.jpg
-      /img/reve/1.jpg
+<script>
+  // Cache-buster automatico per TikTok / Instagram / Browser
+  (function() {
+    const now = new Date();
+    const version = `${now.getFullYear()}${now.getMonth()+1}${now.getDate()}${now.getHours()}`;
+    const params = new URLSearchParams(window.location.search);
+    if (!params.get('v')) {
+      params.set('v', version);
+      const newUrl = `${window.location.pathname}?${params.toString()}`;
+      window.location.replace(newUrl);
+    }
+  })();
+</script>
 
-      References:
-      /img/references/granit/1.jpg
-      /img/references/extasy-courtil/1.jpg
-      /img/references/moody/1.jpg
-      /img/references/maurice/1.jpg
-      /img/references/knass-b/1.jpg
-  -->
 </body>
 </html>
+
 
 
 
